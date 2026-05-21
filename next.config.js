@@ -6,7 +6,6 @@ const nextConfig = {
   },
   basePath: '/fbi',
   assetPrefix: '/fbi',
-  trailingSlash: true,
 }
 
 module.exports = nextConfig
