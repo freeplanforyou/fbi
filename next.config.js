@@ -4,6 +4,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: '/fbi',
+  assetPrefix: '/fbi',
+  trailingSlash: true,
 }
 
 module.exports = nextConfig
