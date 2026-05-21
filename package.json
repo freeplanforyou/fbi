@@ -10,7 +10,9 @@
     "pages:build": "npx @cloudflare/next-on-pages",
     "pages:deploy": "npm run pages:build && npx wrangler pages deploy .vercel/output/static",
     "preview": "npm run pages:build && npx wrangler pages dev .vercel/output/static",
-    "deploy": "npm run pages:deploy"
+    "deploy": "npm run pages:deploy",
+    "export": "next build && touch out/.nojekyll",
+    "gh-deploy": "gh-pages -d out"
   },
   "dependencies": {
     "next": "14.2.3",
@@ -28,6 +30,7 @@
     "postcss": "^8.4.38",
     "autoprefixer": "^10.4.19",
     "@cloudflare/next-on-pages": "^1.11.0",
-    "wrangler": "^3.57.0"
+    "wrangler": "^3.57.0",
+    "gh-pages": "^6.1.1"
   }
 }
